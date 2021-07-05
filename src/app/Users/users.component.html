@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>
+    The Home Depot Safety Team
+  </h1>
+  <div *ngFor="let user of users">
+    <button (click)='showProfile()'>
+      <img src={{user.image}} width='100px' />
+    </button>
+    <h4>{{user.firstName}} - {{user.lastName}} - {{user.role}}</h4>
+  </div>
+</div>
