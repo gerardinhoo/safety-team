@@ -8,13 +8,11 @@ import {User} from '../User'
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  users: User[] = USERS
+  users: User[] = USERS;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  showProfile() {
-    console.log('show')
-  }
+
 }

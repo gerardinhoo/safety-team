@@ -1,11 +1,11 @@
-<div style="text-align:center">
-  <h1>
-    The Home Depot Safety Team
-  </h1>
+<div style="text-align:center; margin-top: 2rem;">
+  <img src="https://storage.googleapis.com/proudcity/ryebrookny/uploads/2019/06/safety.jpg" width="350px" />
+  <h5>Meet The Current Safety Team</h5>
+  <hr>
   <div *ngFor="let user of users">
-    <button (click)='showProfile()'>
-      <img src={{user.image}} width='100px' />
-    </button>
-    <h4>{{user.firstName}} - {{user.lastName}} - {{user.role}}</h4>
+    <img src={{user.image}} width='100px' />
+    <h4>{{user.firstName}} - {{user.lastName}}</h4>
+    <p class='role'>{{user.role}}</p>
+    <hr>
   </div>
 </div>
